@@ -1,7 +1,7 @@
 const matrix = [];
 
 let contador = 1;
-const contadorMax = 50;
+const contadorMax = 150;
 
 for (let i = 0; i < 1; i++) {
   matrix.push([]); // Push una fila para cada iteración
