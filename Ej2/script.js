@@ -22,9 +22,14 @@ function agregarCol(fila,max_col) {
   let columnas = "";
   for (let col = 0; col <max_col; col++) {
     let coloresTablero = (fila+col) % 2 === 0 ? 'casilla0' : 'casilla1';
-    columnas += `<div class="col ${coloresTablero}"></div>`;
+    let numero = fila*max_col + col + 1;
+    columnas += `<div onclick="alertCasilla(${numero})" class="col ${coloresTablero}"></div>`;
   }
   return columnas;
+}
+
+function alertCasilla(numero){
+  alert("hola"+ numero);
 }
 
 
