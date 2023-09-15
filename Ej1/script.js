@@ -1,4 +1,4 @@
-const divTablero = document.querySelector(".tablero");
+/* const divTablero = document.querySelector(".tablero");
 
 const MAX_FIL = 9;
 const MAX_COL = 13;
@@ -14,9 +14,9 @@ function agregarCol() {
     columnas += `<div class="col casilla"></div>`;
   }
   return columnas;
-}
+} */
 
-/* const MIN = 1;
+const MIN = 1;
 const MAX = 100;
 
 const MAX_COL = 10;
@@ -38,4 +38,4 @@ for (let fila = 0; fila < MAX_FIL; fila++) {
   }
 }
 
-console.table(matriz); */
+console.table(matriz);
