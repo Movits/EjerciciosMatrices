@@ -1,0 +1,10 @@
+#tablero{
+    display: grid;
+    place-content: center;
+}
+
+.casilla{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
