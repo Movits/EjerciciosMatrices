@@ -1,16 +1,23 @@
 const divTablero = document.querySelector(".tablero");
+const inputFilas = document.querySelector("#filas");
+const inputColumnas = document.querySelector("#columnas");
 
-const MAX_FIL = 5;
-const MAX_COL = 5;
+function crearTablero() {
+  const MAX_FIL = parseInt(inputFilas.value);
+  const MAX_COL = parseInt(inputColumnas.value);
 
-for (let fila = 0; fila < MAX_FIL; fila++) {
-  divTablero.innerHTML += `
-    <div class="row">${agregarCol()}</div>`;
+  let tablero = "";
+
+  for (let fila = 0; fila < MAX_FIL; fila++) {
+    tablero += `
+      <div class="row">${agregarCol(MAX_COL)}</div>`;
+  }
+  divTablero.innerHTML = tablero;
 }
 
-function agregarCol() {
+function agregarCol(max_col) {
   let columnas = "";
-  for (let col = 0; col < MAX_COL; col++) {
+  for (let col = 0; col <max_col; col++) {
     columnas += `<div class="col casilla"></div>`;
   }
   return columnas;
