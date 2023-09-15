@@ -1,15 +1,41 @@
-const matrix = [];
+const divTablero = document.querySelector(".tablero");
 
-let contador = 1;
-const contadorMax = 200;
+const MAX_FIL = 9;
+const MAX_COL = 13;
 
-for (let i = 0; i < 1; i++) {
-  matrix.push([]); // Push una fila para cada iteración
-  for (let j = 0; j < 1; j++) {
-    while (contador <= contadorMax) {
-      matrix[i].push(contador); // Push el valor del contador en la fila
-      contador++; // Incrementar el contador en cada iteración
+for (let fila = 0; fila < MAX_FIL; fila++) {
+  divTablero.innerHTML += `
+    <div class="row">${agregarCol()}</div>`;
+}
+
+function agregarCol() {
+  let columnas = "";
+  for (let col = 0; col < MAX_COL; col++) {
+    columnas += `<div class="col casilla"></div>`;
+  }
+  return columnas;
+}
+
+/* const MIN = 1;
+const MAX = 100;
+
+const MAX_COL = 10;
+const MAX_FIL = 10;
+
+const matriz = [];
+
+let num = MIN;
+
+for (let fila = 0; fila < MAX_FIL; fila++) {
+  matriz.push([]);
+  for (let col = 0; col < MAX_COL; col++) {
+    matriz[fila][col] = num;
+    num++;
+    if (num > MAX) {
+      fila = MAX_FIL;
+      col = MAX_COL;
     }
   }
-  console.log(matrix[i].join(' ')); // Junta los valores de la fila con un espacio
 }
+
+console.table(matriz); */
