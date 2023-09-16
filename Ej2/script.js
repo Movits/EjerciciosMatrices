@@ -46,3 +46,13 @@ function alertCasilla(numero){
 function cambiarColor(max) {
     return Math.floor(Math.random() * max);
 } */
+
+/**
+ * detecta la casilla
+ * @param {HTMLDivElement} elemento casilla
+ */
+/* function detectar(elemento) {
+  elemento.style.backgroundColor = "red";
+  alert(elemento.id);
+  console.log(elemento.id);
+} */
