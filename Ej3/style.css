@@ -1,5 +1,5 @@
 body{
-    background-color: #4e4e4e;
+    background-color: rgb(153, 206, 153);
 }
 
 .casilla{
@@ -7,6 +7,8 @@ body{
     width: 70px;
     height: 70px;
     border: 1px solid black;
+    display: grid;
+    place-content: center;
 }
 
 #tablero{
@@ -19,4 +21,13 @@ body{
     display: grid;
     margin-top: 10vh;
     place-content: center;
+}
+
+span{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.jugador{
+    background-color: rgb(117, 214, 117);
 }
