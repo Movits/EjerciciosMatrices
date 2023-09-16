@@ -1,0 +1,26 @@
+.casilla{
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+#tablero{
+    display: grid;
+    place-content: center;
+    margin-top: 20vh;
+}
+
+#config-matriz{
+    display: grid;
+    margin-top: 10vh;
+    place-content: center;
+}
+
+.casilla-0{
+    background-color: whitesmoke;
+}
+
+.casilla-1{
+    background-color: rgb(12, 12, 12);
+}
