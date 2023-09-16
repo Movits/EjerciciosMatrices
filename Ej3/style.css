@@ -1,7 +1,11 @@
+body{
+    background-color: #4e4e4e;
+}
+
 .casilla{
-    background-color: green;
-    width: 30px;
-    height: 30px;
+    background-color: rgb(218, 218, 218);
+    width: 70px;
+    height: 70px;
     border: 1px solid black;
 }
 
@@ -15,12 +19,4 @@
     display: grid;
     margin-top: 10vh;
     place-content: center;
-}
-
-.casilla-0{
-    background-color: whitesmoke;
-}
-
-.casilla-1{
-    background-color: rgb(12, 12, 12);
 }
