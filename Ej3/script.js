@@ -72,7 +72,7 @@ document.addEventListener("keydown", function(event) {
         setTimeout(() => {
             alert("Ganaste");
             location.reload();
-        }, 100);
+        }, 10);
     }
 
     if (posJugador[0] == posEnemigo[0] && posJugador[1] == posEnemigo[1]) {
@@ -114,7 +114,21 @@ function movimientoEnemigo() {
                 }
                 break;
         }
+
+        if ((posEnemigo[0] == posCasillaGanaste[0] && posEnemigo[1] == posCasillaGanaste[1]) 
+            || !limiteTablero(posEnemigo[0], posEnemigo[1])) {
+            return;
+        }
+
         agregarEnemigo(posEnemigo[0], posEnemigo[1]);
+
+        if (posJugador[0] == posEnemigo[0] && posJugador[1] == posEnemigo[1]) {
+            setTimeout(() => {
+                alert("Perdiste");
+                location.reload();
+            }, 100);
+        }
+        
     }, 500);
 }
 
