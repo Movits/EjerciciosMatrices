@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(153, 206, 153);
+    background-color: rgb(117, 162, 214);
 }
 
 .casilla{
@@ -29,5 +29,10 @@ span{
 }
 
 .jugador{
-    background-color: rgb(117, 214, 117);
+    background-color: rgb(117, 162, 214);
+}
+
+.ganaste{
+    background-color: rgb(106, 197, 106);
+    
 }
