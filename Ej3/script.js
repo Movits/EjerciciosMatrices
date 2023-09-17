@@ -11,8 +11,33 @@ const ABAJO = "s";
 const IZQUIERDA = "a";
 const DERECHA = "d";
 
+let posJugador = [POS_INICIAL_FILA, POS_INICIAL_COL]
+
+/* Evento que se ejecuta cuando se presiona una tecla */
 document.addEventListener("keydown", function(event) {
-    alert(event.key);
+
+    let jugador = document.querySelector(`#casilla-${posJugador[0] + "-" + posJugador[1]}`);
+    jugador.innerHTML = ``;
+    jugador.classList.remove("jugador");
+
+    switch (event.key) {
+        case ARRIBA:
+            posJugador[0]--;
+            break;
+
+        case ABAJO:
+            posJugador[0]++;
+            break;
+
+        case IZQUIERDA:
+            posJugador[1]--;
+            break;
+
+        case DERECHA:
+            posJugador[1]++;
+            break;
+    }
+    agregarJugador(posJugador[0], posJugador[1]);
 });
 
 /* Genera el Tablero de la pagina */
